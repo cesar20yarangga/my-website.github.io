@@ -3,69 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fricho caesar - Portfolio</title>
-    <link rel="stylesheet" href="stayl.css">
+    <title>Fricho Cesarrea Yarangga - Portfolio</title>
+    <link rel="stylesheet" href="stayles.css">
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo">Fricho Yarangga</div>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <br>
         <div class="toggle-container">
             <input type="checkbox" id="dark-mode-toggle" class="toggle-switch">
             <label for="dark-mode-toggle" class="toggle-label"></label>
         </div>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <main>
-        <section id="about" class="section">
+        <section id="home" class="section active">
             <div class="container">
                 <div class="profile-pic">
                     <img src="Cuplikan layar 2024-02-15 105030.png" alt="Fricho Yarangga">
                 </div>
-                
                 <div class="intro">
-                    <h1 > Hi, I'm FRICHO CESARREA YARANGGA</h1>
-                    <h2>I spend my time on the internet to become a programmer</h2>
-                    <p> Hi, I'm a student at the University of Ottow, Geissler, Papua, I master HTML, CSS and Java.
-                         If you want to contact me, please click on the email button.</p>
-                    <div class="buttons">
-                        
-                        <a href="mailto:cesariofico1@gmail.com" class="button">Email</a>
-                       
-                    </div>
+                    <h1 id="typed-text"></h1>
                 </div>
             </div>
         </section>
-        
-        <section id="blog" class="section">
+        <section id="about" class="section">
             <div class="container">
-                <h2>Blog</h2>
-                <img src="Cuplikan layar 2024-04-30 205951.png" alt="">
-                <p>Saya mendapatkan sertifikat dari dicoding</p>
-                <!-- You can add blog content here -->
+                <h2>About</h2>
+                <p>I am a programmer proficient in HTML, CSS, and JavaScript. I studied at Otto Geissler University and I'm passionate about creating clean and effective web solutions.</p>
             </div>
         </section>
-        
         <section id="projects" class="section">
             <div class="container">
-                <h2> My Projects</h2>
+                <h2>Projects</h2>
                 <p>Coming soon...</p>
-                <!-- You can add projects content here -->
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Contact me via email:</p>
+                <div class="buttons">
+                    <a href="mailto:cesariofico1@gmail.com" class="button">Email</a>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Fricho Yarangga. All rights reserved.</p>
     </footer>
