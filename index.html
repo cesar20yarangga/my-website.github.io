@@ -3,83 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>fricho caesar - Portfolio</title>
+    <link rel="stylesheet" href="stayl.css">
 </head>
 <body>
-    
     <header>
+        <div class="logo"></div>
         <nav>
-            
-            <div class="logo">Hay, Selamat datang  Saya FRICHO </div>
-            
             <ul>
-                <li><a href="#Tentang saya" class="clickable">Tentang saya</a></li>
-                <li><a href="#Proyek saya" class="clickable">Proyek saya</a></li>
-                <li><a href="#skill saya" class="clickable">Skill saya</a></li>
-                <li><a href="#Hubunggi saya" class="clickable">Hubungi saya </a></li>
-                <div class="toggle-container">
-                    <input type="checkbox" id="toggle" class="toggle-checkbox">
-                    <label for="toggle" class="toggle-label">
-                        <span class="toggle-inner"></span>
-                        <span class="toggle-switch"></span>
-                    </label>
-                </div>
-                
-                
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
-        
-    </header>
-    <section id="Tentang saya">
-        <h2>Tentang saya</h2>
-        <p>NAMA SAYA FRICHO CAESARREA YARANGGA <br>
-            SAYA MAHASISWA DI UNIVERSITAS OTTOW GEISSLER PAPUA <br>
-            UMUR     : 20 TAHUN <br>
-            UNIVERSITAS OTTOW GEISSLER
-            
-            
-        </p>
-       <img src="Cuplikan layar 2024-06-11 123406.png" alt="">         
-    </section>
-
-    <section id="Proyek saya">
-        <h2> Proyek saya</h2>
-        <div class="project-gallery">
-            <div class="project clickable">
-                <img src="Cuplikan layar 2024-04-30 205951.png" alt="Project">
-               
-                <p>Saya mendapatkan sertifikat dari Dicoding </p>
-            </div>
-            
+        <br>
+        <div class="toggle-container">
+            <input type="checkbox" id="dark-mode-toggle" class="toggle-switch">
+            <label for="dark-mode-toggle" class="toggle-label"></label>
         </div>
-    </section>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <section id="skill saya">
-        <h2>Skill saya</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>   
-        </ul>
-    </section>
-
-    <section id="Hubunggi saya">
-        <h2>Hubungi saya </h2>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="clickable">Send</button>
-        </form>
-    </section>
-
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="profile-pic">
+                    <img src="Cuplikan layar 2024-02-15 105030.png" alt="Fricho Yarangga">
+                </div>
+                
+                <div class="intro">
+                    <h1 > Hi, I'm FRICHO CESARREA YARANGGA</h1>
+                    <h2>I spend my time on the internet to become a programmer</h2>
+                    <p> Hi, I'm a student at the University of Ottow, Geissler, Papua, I master HTML, CSS and Java.
+                         If you want to contact me, please click on the email button.</p>
+                    <div class="buttons">
+                        
+                        <a href="mailto:cesariofico1@gmail.com" class="button">Email</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="blog" class="section">
+            <div class="container">
+                <h2>Blog</h2>
+                <img src="Cuplikan layar 2024-04-30 205951.png" alt="">
+                <p>Saya mendapatkan sertifikat dari dicoding</p>
+                <!-- You can add blog content here -->
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <div class="container">
+                <h2> My Projects</h2>
+                <p>Coming soon...</p>
+                <!-- You can add projects content here -->
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Fricho Yarangga. All rights reserved.</p>
     </footer>
-<script src="java.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
