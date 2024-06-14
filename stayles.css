@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #e0670b;
     padding: 1rem 2rem;
     color: #e7efe8;
@@ -41,6 +42,7 @@ header .toggle-container {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 0;
     padding: 0;
@@ -87,7 +89,8 @@ nav a:hover {
 .profile-pic img {
     border-radius: 50%;
     width: 150px;
-    height: 150px;
+    height: auto;
+    max-width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -179,12 +182,14 @@ footer.dark-mode {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+        align-items: flex-start;
         padding: 1rem;
     }
 
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
     }
 
     .logo {
@@ -193,7 +198,15 @@ footer.dark-mode {
 
     .profile-pic img {
         width: 120px;
-        height: 120px;
+        height: auto;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
     }
 }
 
@@ -208,7 +221,7 @@ footer.dark-mode {
 
     .profile-pic img {
         width: 100px;
-        height: 100px;
+        height: auto;
     }
 
     .buttons .button {

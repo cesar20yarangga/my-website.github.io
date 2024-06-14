@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Set bagian aktif awal
-    document.querySelector('.section.active').classList.remove('active');
+        document.querySelector('.section.active').classList.remove('active');
     document.getElementById('home').classList.add('active');
     type();
 });
