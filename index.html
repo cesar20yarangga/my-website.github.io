@@ -16,15 +16,26 @@
     <div class="container">
         <header>
             <nav>
-                <div class="logo">CJ</div>
+                <div class="logo"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search">
+                <div class="container">
+                    <div class="toggle-button" id="toggleButton">
+                        <div class="toggle-circle"></div>
+                        <div class="sun">☀️</div>
+                        <div class="moon">🌙</div>
+                    </div>
+                </div>
+            
+                <div class="search-container">
+                    <form action="https://www.google.com/search" method="get">
+                        <input type="text" name="q" class="search-box" placeholder="Search">
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
                 </div>
             </nav>
         </header>

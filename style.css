@@ -198,3 +198,148 @@ footer {
         opacity: 0;
     }
 }
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column */
+.column {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .column {
+        flex: 1 0 33.33%; /* 3 columns layout */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .column {
+        flex: 1 0 50%; /* 2 columns layout */
+    }
+}
+
+/* Small devices (phones, 767px and down) */
+@media (max-width: 767px) {
+    .column {
+        flex: 1 0 100%; /* 1 column layout */
+    }
+}
+
+/* Example Usage */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    margin: 0.5em;
+}
+
+
+
+
+.toggle-button {
+    width: 80px;
+    height: 40px;
+    background-color: #34495e;
+    border: 2px solid #ecf0f1;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.toggle-button .toggle-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.5s;
+}
+
+.toggle-button.dark-mode .toggle-circle {
+    transform: translateX(40px);
+}
+
+.toggle-button .moon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #f1c40f;
+    display: none;
+}
+
+.toggle-button.dark-mode .moon {
+    display: block;
+}
+
+.toggle-button .sun {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #f39c12;
+}
+
+.toggle-button.dark-mode .sun {
+    display: none;
+}
