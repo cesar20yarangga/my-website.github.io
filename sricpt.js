@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const typing = document.querySelector('.typing');
-    const texts = ['Cesarrea Yarangga','Programer'];
+    const texts = ['Cesarrea'];
     let index = 0;
     let charIndex = 0;
     let currentText = '';
@@ -24,21 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
     type();
 });
 
-        const toggleButton = document.getElementById('toggleButton');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            toggleButton.classList.toggle('dark-mode');
-        });
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
 
-        // Update body background and text color based on mode
-        document.body.classList.toggle('dark-mode', localStorage.getItem('mode') === 'dark');
-        toggleButton.classList.toggle('dark-mode', localStorage.getItem('mode') === 'dark');
-
-        toggleButton.addEventListener('click', () => {
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('mode', 'dark');
-            } else {
-                localStorage.setItem('mode', 'light');
-            }
-        });
-    
+    // Toggle moon and sun icons
+    var moon = document.querySelector(".toggle-button .moon");
+    var sun = document.querySelector(".toggle-button .sun");
+    moon.classList.toggle("active");
+    sun.classList.toggle("active");
+}
