@@ -24,13 +24,3 @@ document.addEventListener('DOMContentLoaded', function () {
     type();
 });
 
-function toggleDarkMode() {
-    var body = document.body;
-    body.classList.toggle("dark-mode");
-
-    // Toggle moon and sun icons
-    var moon = document.querySelector(".toggle-button .moon");
-    var sun = document.querySelector(".toggle-button .sun");
-    moon.classList.toggle("active");
-    sun.classList.toggle("active");
-}
