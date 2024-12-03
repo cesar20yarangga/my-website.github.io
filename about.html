@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Me </title>
-    <link rel="icon" type="image/x-icon" href="th.jpeg">
-        <!-- atau jika menggunakan format lain -->
-    <link rel="stylesheet" href="style.css">
+    <title>About - WebMaker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke CSS Anda -->
 </head>
-<body>
-    <div class="container">
-        <header>
+<body id="about-page">
+
+    <!-- Canvas untuk latar belakang animasi bintang bergerak -->
+    <canvas id="stars"></canvas>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">WebMaker</div>
             <nav>
-                <div class="logo"></div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-               
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <section id="about" class="about">
-            <h2>About</h2>
-            <p>I am a programmer, I am from Papua, I studied at the University of 
-                Ottow Geissler Papua, 
-                I am 20 years old
-                 I love my internet
-                 name Fricho Caessarrea Yarangga 
-                and
-                I mastered programming languages </p>
-            <div class="skills">
-                <div class="skill">HTML & CSS</div>
-                <div class="skill">JavaScript</div>
-            </div>
-            
-        </section>
-    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading web development company providing customized solutions for businesses worldwide.</p>
+    </section>
+
     <footer>
-        <p></p>
+        <p>&copy; 2024 WebMaker - Jasa Pembuatan Website</p>
     </footer>
+
+    <!-- Menyertakan JavaScript untuk animasi bintang bergerak -->
+    <script src="login.js"></script>
 </body>
 </html>
